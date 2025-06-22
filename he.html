@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Portfolio - Help</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="navbar-menu-oblong" id="navbarMenuOblong" tabindex="0" aria-label="Open menu" style="cursor:pointer;">
+      <span class="menu-label">Menu</span>
+      <div class="menu-circle">
+        <div class="menu-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <nav id="primary-navigation" class="nav-links" role="navigation" aria-label="Primary Navigation">
+      <a href="ho.html" class="nav-link">Home</a>
+      <a href="do.html" class="nav-link">Docs</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="he.html" class="nav-link active" aria-current="page">Help</a>
+      <a href="co.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <input type="search" class="search-box" placeholder="Search..." aria-label="Search" />
+      <div class="profile-pic" id="profilePic" tabindex="0" aria-haspopup="true" aria-controls="dropdownMenu" aria-expanded="false" role="button" title="User Menu"></div>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu (hidden by default) -->
+  <aside class="sidebar" id="sidebarMenu" aria-label="Sidebar Menu" style="display: none;">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; background: #ffa500; border-radius: 30px; padding: 0.5rem 1.2rem 0.5rem 1.2rem;">
+      <span style="font-size: 2rem; font-weight: 900; color: #333;">Menu</span>
+      <div class="menu-button" id="sidebarCloseBtn" aria-label="Close menu" tabindex="0" style="background: #fff; border: 5px solid #ffa500; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 0 0 0.5rem;">
+        <div class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <a href="q.html"><button class="menu-btn">MY ACCOUNT</button></a>
+    <a href="add-portfolio.html"><button class="menu-btn">PORTFOLIO</button></a>
+    <a href="add-docs.html"><button class="menu-btn">ADD DOCS</button></a>
+    <button class="menu-btn" id="signOutBtn">SIGN OUT</button>
+  </aside>
+
+  <main class="main-content" role="main">
+    <section class="hero-section" aria-labelledby="help-title">
+      <h1 id="help-title" class="main-title">Help?</h1>
+      <p class="subtitle">
+        I hope you enjoy exploring my portfolio! Every detail has been crafted with care to create a smooth and meaningful experience. Your visit means a lot, and I'm always working to make it even better each time you return.
+      </p>
+    </section>
+
+    <section class="help-sections" aria-label="Help topics">
+      <article class="help-section" tabindex="0" aria-labelledby="help1-title">
+        <h3 id="help1-title" class="help-title">How to Add Portfolio?</h3>
+        <div class="help-content">
+          <p>To add a portfolio item, navigate to "Add Portfolio" in your user menu, fill in the details, and submit your work to showcase it here.</p>
+        </div>
+      </article>
+
+      <article class="help-section" tabindex="0" aria-labelledby="help2-title">
+        <h3 id="help2-title" class="help-title">How to Add Docs?</h3>
+        <div class="help-content">
+          <p>Use the "Add Docs" option in your user menu to upload documentation files or links relevant to your portfolio pieces.</p>
+        </div>
+      </article>
+
+      <article class="help-section" tabindex="0" aria-labelledby="help3-title">
+        <h3 id="help3-title" class="help-title">How to Use Website?</h3>
+        <div class="help-content">
+          <p>Simply browse the different sections using the navigation bar. Use the search for quick access and explore details with the modals.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 ONLINE Portfolio</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-content">
+      <button class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+      <header class="modal-header">
+        <h2 id="modalTitle">Tagsay Program</h2>
+      </header>
+      <section class="modal-body">
+        <div class="modal-logo" aria-label="National Teachers College Logo">
+          <div class="ntc-logo" aria-hidden="true">NTC</div>
+          <p>National Teachers College</p>
+        </div>
+        <h3 class="modal-title">Title<br />Online Portfolio</h3>
+        <div class="modal-lines" aria-hidden="true">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

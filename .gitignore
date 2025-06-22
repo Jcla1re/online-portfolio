@@ -1,0 +1,11 @@
+# Dependencies
+/node_modules
+
+# Uploads - You might want to back these up separately
+# as they will be lost on redeployment on most free tiers.
+/uploads
+
+# Local Environment
+.env
+users.json
+portfolios.json 

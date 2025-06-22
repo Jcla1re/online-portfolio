@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Portfolio - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="navbar-menu-oblong" id="navbarMenuOblong" tabindex="0" aria-label="Open menu" style="cursor:pointer;">
+      <span class="menu-label">Menu</span>
+      <div class="menu-circle">
+        <div class="menu-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <nav id="primary-navigation" class="nav-links" role="navigation" aria-label="Primary Navigation">
+      <a href="ho.html" class="nav-link active" aria-current="page">Home</a>
+      <a href="do.html" class="nav-link">Docs</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="he.html" class="nav-link">Help</a>
+      <a href="co.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <input type="search" class="search-box" placeholder="Search..." aria-label="Search" />
+      <div class="profile-pic" id="profilePic" tabindex="0" aria-haspopup="true" aria-controls="dropdownMenu" aria-expanded="false" role="button" title="User Menu"></div>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu (hidden by default) -->
+  <aside class="sidebar" id="sidebarMenu" aria-label="Sidebar Menu" style="display: none;">
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+      <span style="font-size: 2rem; font-weight: 900; color: #333;">Menu</span>
+      <div class="menu-button" id="sidebarCloseBtn" aria-label="Close menu" tabindex="0" style="background: #ffa500; border: none; width: 50px; height: 50px; margin: 0;">
+        <div class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <a href="q.html"><button class="menu-btn">MY ACCOUNT</button></a>
+    <a href="add-portfolio.html"><button class="menu-btn">PORTFOLIO</button></a>
+    <a href="add-docs.html"><button class="menu-btn">ADD DOCS</button></a>
+    <button class="menu-btn" id="signOutBtn">SIGN OUT</button>
+  </aside>
+
+  <main class="main-content" role="main">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="main-title">Online Portfolio</h1>
+      <p class="subtitle">
+        I hope you enjoy exploring my portfolio! Every detail has been crafted with care to create a smooth and meaningful experience. Your visit means a lot, and I'm always working to make it even better each time you return.
+      </p>
+      <a href="do.html" class="btn btn-primary" style="margin-top: 2rem; display: inline-block; font-weight: 700; padding: 1rem 2rem; background-color: #111827; color: white; border-radius: 0.75rem; text-decoration: none; transition: background-color 0.3s;">
+        Browse Docs
+      </a>
+    </section>
+
+    <section class="portfolio-grid" aria-label="Portfolio items">
+      <!-- Portfolio cards will be dynamically inserted here by main.js -->
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 ONLINE Portfolio</p>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-content">
+      <button class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+      <header class="modal-header">
+        <h2 id="modalTitle">Tagsay Program</h2>
+      </header>
+      <section class="modal-body">
+        <div class="modal-logo" aria-label="National Teachers College Logo">
+          <div class="ntc-logo" aria-hidden="true">NTC</div>
+          <p>National Teachers College</p>
+        </div>
+        <h3 class="modal-title">Title<br />Online Portfolio</h3>
+        <div class="modal-lines" aria-hidden="true">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
