@@ -42,7 +42,7 @@ app.use(express.static(__dirname));
 
 // Optional: Redirect root to home page
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'ho.html'));
+  res.sendFile(path.join(__dirname, 're.html'));
 });
 
 // Helper function to read users from the database file
