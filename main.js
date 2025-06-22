@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://YOUR_RENDER_URL_HERE'; // <-- IMPORTANT: REPLACE WITH YOUR LIVE URL
+const API_BASE_URL = 'https://online-portfolio-owby.onrender.com'; // <-- IMPORTANT: REPLACE WITH YOUR LIVE URL
 
 // script.js
 
